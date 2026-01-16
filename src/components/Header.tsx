@@ -39,7 +39,6 @@ export function Header() {
     pt: "PT",
     en: "EN",
     ja: "JA",
-    fr: "FR",
   };
 
   return (
@@ -91,9 +90,6 @@ export function Header() {
                 <DropdownMenuItem onClick={() => setLanguage("ja")}>
                   🇯🇵 日本語
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage("fr")}>
-                  🇫🇷 Français
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <a
@@ -123,9 +119,6 @@ export function Header() {
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setLanguage("ja")}>
                   🇯🇵 日本語
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage("fr")}>
-                  🇫🇷 Français
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -175,9 +168,6 @@ export function Header() {
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={() => setLanguage("ja")}>
                     🇯🇵 日本語
-                  </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => setLanguage("fr")}>
-                    🇫🇷 Français
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
