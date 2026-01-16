@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 
-export type Language = "pt" | "en" | "ja";
+export type Language = "pt" | "en" | "ja" | "fr";
 
 interface LanguageContextType {
   language: Language;
@@ -13,7 +13,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>(() => {
     // Tenta recuperar o idioma salvo no localStorage
     const saved = localStorage.getItem("language") as Language;
-    return saved && ["pt", "en", "ja"].includes(saved) ? saved : "pt";
+    return saved && ["pt", "en", "ja", "fr"].includes(saved) ? saved : "pt";
   });
 
   const handleSetLanguage = (lang: Language) => {
