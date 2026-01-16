@@ -109,6 +109,7 @@ export default {
       backgroundImage: {
         "gold-gradient": "linear-gradient(135deg, hsl(43 67% 52%) 0%, hsl(37 63% 44%) 50%, hsl(43 67% 52%) 100%)",
         "dark-gradient": "linear-gradient(180deg, hsl(240 7% 5%) 0%, hsl(240 6% 4%) 100%)",
+        "gradient-radial": "radial-gradient(circle, var(--tw-gradient-stops))",
       },
     },
   },
