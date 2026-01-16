@@ -1,12 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { Categories } from "@/components/Categories";
+import { ContentMap } from "@/components/ContentMap";
+import { Modules } from "@/components/Modules";
+import { ForWho } from "@/components/ForWho";
+import { Testimonials } from "@/components/Testimonials";
+import { Professor } from "@/components/Professor";
+import { Offer } from "@/components/Offer";
+import { Bonuses } from "@/components/Bonuses";
+import { FAQ } from "@/components/FAQ";
+import { Footer } from "@/components/Footer";
+import { StickyMobileBar } from "@/components/StickyMobileBar";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background text-foreground">
+      <Header />
+      <main className="pb-20 md:pb-0">
+        <Hero />
+        <Categories />
+        <ContentMap />
+        <Modules />
+        <ForWho />
+        <Testimonials />
+        <Professor />
+        <Offer />
+        <Bonuses />
+        <FAQ />
+      </main>
+      <Footer />
+      <StickyMobileBar />
     </div>
   );
 };
