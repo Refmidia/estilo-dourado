@@ -11,8 +11,7 @@ import { siteConfig } from "@/config/siteConfig";
 
 const includes = [
   "Acesso imediato a todo o conteúdo",
-  "8+ módulos completos",
-  "50+ aulas em vídeo",
+  "10 módulos completos",
   "Certificado profissional",
   "Suporte via grupo exclusivo",
   "Atualizações vitalícias",
@@ -51,34 +50,55 @@ export function Offer() {
           className="max-w-2xl mx-auto"
         >
           <div className="card-premium p-8 md:p-12 border-gold-gradient gold-glow">
-            {/* Discount Badge */}
-            <div className="flex justify-center mb-6">
-              <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-bold">
-                {siteConfig.pricing.discount}
-              </span>
-            </div>
 
             {/* Price */}
-            <div className="text-center mb-8">
-              <p className="text-muted-foreground line-through text-lg mb-2">
-                De {siteConfig.pricing.originalPrice}
-              </p>
-              <p className="text-4xl md:text-5xl font-bold text-primary mb-2">
-                {siteConfig.pricing.installments}
-              </p>
-              <p className="text-muted-foreground">
-                ou {siteConfig.pricing.fullPrice} à vista
+            <div className="text-center mb-8 space-y-6">
+              {/* Curso Profissional */}
+              <div className="pb-6 border-b border-border">
+                <h3 className="text-lg font-semibold mb-2 text-primary">💈 {siteConfig.pricing.professional.title}</h3>
+                <p className="text-sm text-muted-foreground mb-3">({siteConfig.pricing.professional.hours})</p>
+                <p className="text-4xl md:text-5xl font-bold text-primary">
+                  {siteConfig.pricing.professional.price} {siteConfig.pricing.professional.currency}
+                </p>
+              </div>
+              
+              {/* Curso VIP */}
+              <div>
+                <h3 className="text-lg font-semibold mb-2 text-primary">💈 {siteConfig.pricing.vip.title}</h3>
+                <p className="text-sm text-muted-foreground mb-3">({siteConfig.pricing.vip.hours})</p>
+                <p className="text-4xl md:text-5xl font-bold text-primary">
+                  {siteConfig.pricing.vip.price} {siteConfig.pricing.vip.currency}
+                </p>
+              </div>
+            </div>
+
+            {/* Payment Methods */}
+            <div className="mb-8">
+              <h4 className="font-semibold mb-4 text-center">Formas de pagamento:</h4>
+              <div className="grid grid-cols-2 gap-2">
+                {siteConfig.paymentMethods.map((method, index) => (
+                  <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground bg-muted/30 px-3 py-2 rounded-md">
+                    <CheckCircle className="text-primary flex-shrink-0" size={16} />
+                    {method}
+                  </div>
+                ))}
+              </div>
+              <p className="text-center text-sm text-muted-foreground mt-4">
+                Informações: {siteConfig.contactPhone}
               </p>
             </div>
 
             {/* What's included */}
-            <div className="grid md:grid-cols-2 gap-3 mb-8">
-              {includes.map((item, index) => (
-                <div key={index} className="flex items-center gap-2">
-                  <CheckCircle className="text-primary flex-shrink-0" size={18} />
-                  <span className="text-sm text-muted-foreground">{item}</span>
-                </div>
-              ))}
+            <div className="mb-8">
+              <h4 className="font-semibold mb-4 text-center">O que está incluído:</h4>
+              <div className="grid md:grid-cols-2 gap-3">
+                {includes.map((item, index) => (
+                  <div key={index} className="flex items-center gap-2">
+                    <CheckCircle className="text-primary flex-shrink-0" size={18} />
+                    <span className="text-sm text-muted-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
             {/* CTAs */}

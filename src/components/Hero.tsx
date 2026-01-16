@@ -1,16 +1,19 @@
 import { motion } from "framer-motion";
 import { CheckCircle, Play } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
-import heroImage from "@/assets/hero-barber.jpg";
-
-const badges = [
-  "Acesso imediato",
-  "Certificado incluso",
-  "Do básico ao avançado",
-  "Aulas práticas",
-];
+import { useTranslation } from "@/hooks/useTranslation";
+import heroImage from "@/assets/hero-barber.png";
 
 export function Hero() {
+  const { t } = useTranslation();
+  
+  const badges = [
+    t("hero.badges.immediate"),
+    t("hero.badges.certificate"),
+    t("hero.badges.basicToAdvanced"),
+    t("hero.badges.practical"),
+  ];
+
   return (
     <section id="inicio" className="relative min-h-screen flex items-center noise-overlay section-dark pt-20">
       {/* Background gradient overlay */}
@@ -32,7 +35,7 @@ export function Hero() {
               className="inline-block mb-4"
             >
               <span className="text-sm font-medium text-primary bg-primary/10 px-4 py-2 rounded-full border border-primary/30">
-                Formação Profissional Completa
+                {t("hero.badge")}
               </span>
             </motion.div>
 
@@ -40,21 +43,27 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+              className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight"
             >
-              Aprenda barbearia{" "}
-              <span className="text-gold-gradient">do zero ao avançado</span>{" "}
-              com método passo a passo
+              {t("hero.title")}
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0"
+              className="text-lg md:text-xl text-primary mb-6 max-w-xl mx-auto lg:mx-0 font-semibold"
             >
-              Conteúdo direto, organizado por módulos e com suporte para você
-              evoluir rápido e se tornar um profissional de sucesso.
+              {t("hero.subtitle")}
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.45 }}
+              className="text-base md:text-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0"
+            >
+              {siteConfig.schoolTagline}
             </motion.p>
 
             {/* CTAs */}
@@ -68,14 +77,14 @@ export function Hero() {
                 href="#oferta"
                 className="btn-gold text-base md:text-lg px-8 py-4 text-center gold-glow-hover"
               >
-                Quero me inscrever agora
+                {t("hero.cta.primary")}
               </a>
               <a
                 href="#modulos"
                 className="btn-gold-outline text-base md:text-lg px-8 py-4 text-center flex items-center justify-center gap-2"
               >
                 <Play size={20} />
-                Ver módulos
+                {t("hero.cta.secondary")}
               </a>
             </motion.div>
 
@@ -122,16 +131,16 @@ export function Hero() {
               >
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-primary">8+</p>
-                    <p className="text-xs md:text-sm text-muted-foreground">Módulos</p>
+                    <p className="text-2xl md:text-3xl font-bold text-primary">10+</p>
+                    <p className="text-xs md:text-sm text-muted-foreground">{t("hero.stats.modules")}</p>
                   </div>
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-primary">50+</p>
-                    <p className="text-xs md:text-sm text-muted-foreground">Aulas</p>
+                    <p className="text-2xl md:text-3xl font-bold text-primary">{siteConfig.stats.studentsGraduated}</p>
+                    <p className="text-xs md:text-sm text-muted-foreground">{t("hero.stats.students")}</p>
                   </div>
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-primary">5k+</p>
-                    <p className="text-xs md:text-sm text-muted-foreground">Alunos</p>
+                    <p className="text-2xl md:text-3xl font-bold text-primary">{siteConfig.stats.jobsCompleted}</p>
+                    <p className="text-xs md:text-sm text-muted-foreground">Trabalhos</p>
                   </div>
                 </div>
               </motion.div>

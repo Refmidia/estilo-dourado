@@ -1,17 +1,20 @@
 import { MessageCircle, Instagram } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const navItems = [
-  { label: "Início", href: "#inicio" },
-  { label: "Módulos", href: "#modulos" },
-  { label: "Bônus", href: "#bonus" },
-  { label: "Professor", href: "#professor" },
-  { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Oferta", href: "#oferta" },
-  { label: "FAQ", href: "#faq" },
+  { key: "nav.home" as const, href: "#inicio" },
+  { key: "nav.modules" as const, href: "#modulos" },
+  { key: "nav.bonuses" as const, href: "#bonus" },
+  { key: "nav.professor" as const, href: "#professor" },
+  { key: "nav.testimonials" as const, href: "#depoimentos" },
+  { key: "nav.offer" as const, href: "#oferta" },
+  { key: "nav.faq" as const, href: "#faq" },
 ];
 
 export function Footer() {
+  const { t } = useTranslation();
+  
   return (
     <footer className="py-12 section-dark border-t border-border">
       <div className="container mx-auto px-4">
@@ -36,7 +39,7 @@ export function Footer() {
                   href={item.href}
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  {item.label}
+                  {t(item.key)}
                 </a>
               ))}
             </nav>
@@ -71,7 +74,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground text-center md:text-left">
-            © {new Date().getFullYear()} {siteConfig.schoolName}. Todos os direitos reservados.
+            © {new Date().getFullYear()} {siteConfig.schoolName}. {t("footer.rights")}.
           </p>
           <a
             href={siteConfig.whatsappLink}
@@ -80,7 +83,7 @@ export function Footer() {
             className="btn-gold text-sm"
           >
             <MessageCircle size={16} className="inline mr-2" />
-            Falar no WhatsApp
+            {t("header.whatsapp")}
           </a>
         </div>
       </div>

@@ -1,21 +1,31 @@
 import { useState, useEffect } from "react";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X, MessageCircle, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "@/config/siteConfig";
+import { useTranslation } from "@/hooks/useTranslation";
+import { useLanguage, Language } from "@/contexts/LanguageContext";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const navItems = [
-  { label: "Início", href: "#inicio" },
-  { label: "Módulos", href: "#modulos" },
-  { label: "Bônus", href: "#bonus" },
-  { label: "Professor", href: "#professor" },
-  { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Oferta", href: "#oferta" },
-  { label: "FAQ", href: "#faq" },
+  { key: "nav.home" as const, href: "#inicio" },
+  { key: "nav.modules" as const, href: "#modulos" },
+  { key: "nav.bonuses" as const, href: "#bonus" },
+  { key: "nav.professor" as const, href: "#professor" },
+  { key: "nav.testimonials" as const, href: "#depoimentos" },
+  { key: "nav.offer" as const, href: "#oferta" },
+  { key: "nav.faq" as const, href: "#faq" },
 ];
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
+  const { language, setLanguage } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +34,12 @@ export function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const languageLabels: Record<Language, string> = {
+    pt: "PT",
+    en: "EN",
+    ja: "JA",
+  };
 
   return (
     <header
@@ -37,9 +53,11 @@ export function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2">
-            <span className="font-serif text-lg md:text-xl font-bold text-gold-gradient">
-              {siteConfig.schoolName}
-            </span>
+            <img 
+              src="/logo.png" 
+              alt={siteConfig.schoolName}
+              className="h-10 md:h-12 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -50,13 +68,30 @@ export function Header() {
                 href={item.href}
                 className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
               >
-                {item.label}
+                {t(item.key)}
               </a>
             ))}
           </nav>
 
-          {/* CTA Button */}
+          {/* Language Selector & CTA Button - Desktop */}
           <div className="hidden md:flex items-center gap-4">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors px-3 py-2 rounded-md hover:bg-muted/50">
+                <Globe size={18} />
+                <span>{languageLabels[language]}</span>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem onClick={() => setLanguage("pt")}>
+                  🇧🇷 Português
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setLanguage("en")}>
+                  🇺🇸 English
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setLanguage("ja")}>
+                  🇯🇵 日本語
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <a
               href={siteConfig.whatsappLink}
               target="_blank"
@@ -64,18 +99,37 @@ export function Header() {
               className="btn-gold flex items-center gap-2 text-sm"
             >
               <MessageCircle size={18} />
-              Falar no WhatsApp
+              {t("header.whatsapp")}
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-foreground p-2"
-            aria-label="Menu"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile - Language Selector & Menu Button */}
+          <div className="lg:hidden flex items-center gap-2">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors px-2 py-2 rounded-md hover:bg-muted/50">
+                <Globe size={18} />
+                <span>{languageLabels[language]}</span>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem onClick={() => setLanguage("pt")}>
+                  🇧🇷 Português
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setLanguage("en")}>
+                  🇺🇸 English
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setLanguage("ja")}>
+                  🇯🇵 日本語
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-foreground p-2"
+              aria-label="Menu"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -96,9 +150,28 @@ export function Header() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-muted-foreground hover:text-primary py-2 transition-colors"
                 >
-                  {item.label}
+                  {t(item.key)}
                 </a>
               ))}
+              <div className="flex items-center gap-2 mt-2">
+                <DropdownMenu>
+                  <DropdownMenuTrigger className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors px-3 py-2 rounded-md hover:bg-muted/50 w-full justify-start">
+                  <Globe size={18} />
+                  <span>{languageLabels[language]}</span>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start">
+                  <DropdownMenuItem onClick={() => setLanguage("pt")}>
+                    🇧🇷 Português
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => setLanguage("en")}>
+                    🇺🇸 English
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => setLanguage("ja")}>
+                    🇯🇵 日本語
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+              </div>
               <a
                 href={siteConfig.whatsappLink}
                 target="_blank"
@@ -106,7 +179,7 @@ export function Header() {
                 className="btn-gold flex items-center justify-center gap-2 mt-2"
               >
                 <MessageCircle size={18} />
-                Falar no WhatsApp
+                {t("header.whatsapp")}
               </a>
             </nav>
           </motion.div>

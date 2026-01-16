@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Categories } from "@/components/Categories";
-import { ContentMap } from "@/components/ContentMap";
+import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { Modules } from "@/components/Modules";
 import { ForWho } from "@/components/ForWho";
 import { Testimonials } from "@/components/Testimonials";
@@ -19,7 +19,7 @@ const Index = () => {
       <main className="pb-20 md:pb-0">
         <Hero />
         <Categories />
-        <ContentMap />
+        <WhyChooseUs />
         <Modules />
         <ForWho />
         <Testimonials />

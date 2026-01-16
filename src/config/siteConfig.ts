@@ -5,36 +5,73 @@
 
 export const siteConfig = {
   // Links principais
-  whatsappLink: "https://wa.me/5511999999999", // Substitua pelo seu número
+  whatsappLink: "https://wa.me/819012385981", // Número do Japão
   checkoutLink: "#oferta", // Link do checkout/pagamento
-  instagramLink: "https://instagram.com/fabricadeestilo",
+  instagramLink: "https://www.instagram.com/fabricadeestiloo/",
+  contactPhone: "090 1238 5981",
 
   // Informações da escola
-  schoolName: "Fábrica de Estilo School",
-  schoolTagline: "Uma escola de formação profissional",
+  schoolName: "Fábrica de Estilo",
+  schoolTagline: "100% Dinâmico com mais de 70 alunos formados no Japão 🇯🇵",
+  
+  // Estatísticas
+  stats: {
+    studentsGraduated: "70+",
+    studentsGraduatedText: "Alunos formados no Japão",
+    instagramFollowers: "500 mil+",
+    jobsCompleted: "5.000+",
+    jobsCompletedText: "Trabalhos realizados no 🇯🇵",
+    googleMapsRank: "1ª opção na pesquisa Google Maps por barbearia em Aichi-ken",
+  },
+
+  // Por que fazer o curso
+  whyChooseUs: [
+    "1ª opção na pesquisa Google Maps por barbearia em Aichi-ken!",
+    "No Instagram já somamos mais de 500 mil seguidores no @fabricadeestiloo",
+    "Mais de 5 mil trabalhos realizados no 🇯🇵",
+    "Credibilidade com nosso público",
+    "Plano de carreira com nossos alunos",
+    "Estágio",
+    "Possibilidade de franquia",
+    "Estrutura para nossos alunos e clientes",
+  ],
 
   // Preços
   pricing: {
-    installments: "12x de R$ 97,00",
-    fullPrice: "R$ 997,00",
-    originalPrice: "R$ 1.997,00",
-    discount: "50% OFF",
+    professional: {
+      title: "BARBEARIA PROFISSIONAL",
+      hours: "100 hrs",
+      price: "400.000",
+      currency: "¥",
+    },
+    vip: {
+      title: "CURSO VIP",
+      hours: "100 hrs",
+      price: "450.000",
+      currency: "¥",
+    },
   },
+
+  // Formas de pagamento
+  paymentMethods: [
+    "Cartão de Crédito",
+    "Financiamento Próprio (mediante a contrato)",
+    "PIX no Brasil",
+    "À Vista",
+  ],
 
   // Professor
   professor: {
-    name: "Mestre Carlos Silva",
-    title: "Fundador da Fábrica de Estilo School",
-    experience: "15+ anos de experiência",
-    students: "5.000+ alunos formados",
-    description: `Com mais de 15 anos de experiência no mercado de barbearia e estética masculina, 
-    o Mestre Carlos Silva já formou milhares de profissionais que hoje atuam em todo o Brasil. 
-    Seu método único combina técnica clássica com as tendências mais modernas do mercado.`,
+    name: "Professores Japoneses e Brasileiro",
+    title: "Instrutores Certificados",
+    description: `Aprenda com professores japoneses e brasileiros especializados, 
+    com experiência comprovada no mercado japonês e brasileiro. 
+    Metodologia única que combina técnicas tradicionais japonesas com o estilo brasileiro moderno.`,
     achievements: [
-      "Certificação internacional em técnicas de corte",
-      "Premiado 3x como melhor barbeiro do Brasil",
-      "Mentor de donos de barbearias de sucesso",
-      "Criador do Método Fábrica de Estilo",
+      "Professores certificados e experientes",
+      "Metodologia única Japão-Brasil",
+      "Mais de 70 alunos formados no Japão",
+      "Experiência prática no mercado japonês",
     ],
   },
 
@@ -42,76 +79,131 @@ export const siteConfig = {
   modules: [
     {
       number: "01",
-      title: "Fundamentos da Barbearia",
-      topics: ["História e evolução da barbearia", "Postura profissional", "Biossegurança e higiene"],
+      title: "Introdução",
+      topics: [
+        "O Barbeiro e a Barbearia",
+        "História da Barbearia",
+        "Como Ser Barbeiro de sucesso",
+        "Biossegurança",
+      ],
     },
     {
       number: "02",
-      title: "Ferramentas e Equipamentos",
-      topics: ["Escolha das tesouras ideais", "Máquinas e pentes", "Manutenção dos equipamentos"],
+      title: "Operacional da Barbearia",
+      topics: [
+        "Marketing",
+        "Gestão",
+        "PROVA TEÓRICA e PRÁTICA",
+      ],
     },
     {
       number: "03",
-      title: "Cortes Clássicos",
-      topics: ["Degradê tradicional", "Corte social", "Undercut clássico"],
+      title: "Ferramentas de Barbeiro (Kit Profissional Incluso)",
+      topics: [
+        "3 Máquinas",
+        "2 Tesouras",
+        "Navalhete",
+        "Limpador e escova modeladora",
+        "Pente de corte",
+      ],
     },
     {
       number: "04",
-      title: "Cortes Modernos",
-      topics: ["Fade em todas as alturas", "Razor fade", "Skin fade perfeito"],
+      title: "Técnicas de Corte",
+      topics: [
+        "Social",
+        "Fade / Low Fade",
+        "Mid Fade",
+        "High Fade",
+        "Taper Fade",
+        "To Land De cima para baixo",
+        "To SKY De Baixo para cima",
+      ],
     },
     {
       number: "05",
-      title: "Barba Profissional",
-      topics: ["Técnicas de aparar", "Design de barba", "Barba navalhada"],
+      title: "Freestyle",
+      topics: [
+        "Básico",
+        "Avançado",
+      ],
     },
     {
       number: "06",
-      title: "Pigmentação e Química",
-      topics: ["Coloração masculina", "Luzes e mechas", "Alisamento"],
+      title: "Técnicas de Barba",
+      topics: [
+        "Barba lenhadora",
+        "Barba por fazer",
+      ],
     },
     {
       number: "07",
-      title: "Gestão de Barbearia",
-      topics: ["Atendimento ao cliente", "Precificação", "Marketing para barbeiros"],
+      title: "Barba Terapia",
+      topics: [
+        "Diagnóstico e Preparação - Avaliação da pele e da barba + higienização",
+        "Esfoliação (opcional, mas recomendada) - Remove células mortas, desobstrui os poros",
+        "Toalha Quente - Aplicação de toalha quente para abrir os poros e amaciar os fios",
+        "Aplicação do Produto de Barbear - Creme, gel ou óleo de barbear adequado",
+        "Barbeamento / Desenho da Barba - Execução do barbear ou contorno com técnica",
+        "Finalização Terapêutica - Toalha fria para fechar os poros + balm ou óleo calmante",
+      ],
     },
     {
       number: "08",
-      title: "Seu Próprio Negócio",
-      topics: ["Como abrir sua barbearia", "Gestão financeira", "Fidelização de clientes"],
+      title: "Química",
+      topics: [
+        "Luzes",
+        "Pigmentação capilar e barba",
+      ],
+    },
+    {
+      number: "09",
+      title: "Técnicas de Corte Asiático",
+      topics: [
+        "Corte e Pama",
+      ],
+    },
+    {
+      number: "10",
+      title: "Conclusão do Curso",
+      topics: [
+        "Diploma com carterinha profissional emitida pela Federação @ FEPCSSP",
+        "Escola de Barbeiros e Cabeleireiros do Estado de SP",
+        "Diploma válido em mais de 138 países",
+      ],
     },
   ],
 
   // Bônus
   bonuses: [
     {
-      title: "Kit de Cortes Exclusivos",
-      description: "Acesso a 20+ técnicas de cortes que não estão no curso principal",
-      value: "R$ 297",
-    },
-    {
-      title: "Grupo VIP no Telegram",
-      description: "Comunidade exclusiva para tirar dúvidas e networking",
-      value: "R$ 197",
-    },
-    {
-      title: "Mentoria em Grupo",
-      description: "Lives mensais para acompanhamento e evolução",
-      value: "R$ 497",
-    },
-    {
-      title: "Templates de Marketing",
-      description: "Artes prontas para divulgar seu trabalho nas redes",
-      value: "R$ 147",
-    },
-    {
-      title: "Certificado Profissional",
-      description: "Certificado reconhecido para alavancar sua carreira",
+      title: "Kit Profissional Incluso",
+      description: "3 Máquinas, 2 Tesouras, Navalhete, Limpador, Escova modeladora e Pente de corte",
       value: "Incluso",
     },
     {
-      title: "Atualizações Vitalícias",
-      description: "Novos conteúdos adicionados sem custo extra",
+      title: "Estágio",
+      description: "Oportunidade de estágio prático para aplicar o conhecimento",
+      value: "Incluso",
+    },
+    {
+      title: "Plano de Carreira",
+      description: "Acompanhamento e orientação para desenvolvimento profissional",
+      value: "Incluso",
+    },
+    {
+      title: "Possibilidade de Franquia",
+      description: "Oportunidade de expandir com modelo de franquia",
+      value: "Incluso",
+    },
+    {
+      title: "Diploma Profissional",
+      description: "Diploma com carterinha profissional emitida pela FEPCSSP, válido em mais de 138 países",
+      value: "Incluso",
+    },
+    {
+      title: "Estrutura Completa",
+      description: "Acesso a toda estrutura para alunos e clientes",
       value: "Incluso",
     },
   ],
