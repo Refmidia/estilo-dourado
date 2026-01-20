@@ -49,14 +49,14 @@ export function ForWho() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="card-premium p-6 flex items-start gap-4"
+                className="card-premium p-4 sm:p-5 md:p-6 flex items-start gap-3 sm:gap-4"
               >
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  {Icon && <Icon className="text-primary" size={24} />}
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  {Icon && <Icon className="text-primary" size={20} />}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <h3 className="font-semibold text-base sm:text-lg mb-1">{item.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{item.description}</p>
                 </div>
               </motion.div>
             );

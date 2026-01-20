@@ -74,7 +74,7 @@ export const translations: Record<"pt" | "en" | "ja", Record<TranslationKey, str
     "hero.stats.classes": "Aulas",
     "hero.stats.students": "Alunos",
     "welcome.title": "SEJA BEM-VINDO AO FÁBRICA DE ESTILO",
-    "welcome.subtitle": "100% DINÂMICO COM MAIS DE 70 ALUNOS FORMADOS NO JAPÃO 🇯🇵",
+    "welcome.subtitle": "100% DINÂMICO COM MAIS DE 100 ALUNOS FORMADOS NO JAPÃO 🇯🇵",
     "why.title": "POR QUE FAZER O CURSO CONOSCO?",
     "why.reasons": "A Fábrica de Estilo é referência no mercado!",
     "techniques.title": "TÉCNICAS ABORDADAS NO CURSO",

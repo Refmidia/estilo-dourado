@@ -64,7 +64,7 @@ export function Modules() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           {siteConfig.modules.map((module, index) => (
             <Dialog key={index}>
               <motion.div
@@ -99,25 +99,25 @@ export function Modules() {
                 </DialogTrigger>
 
                 {/* Modal com detalhes do módulo */}
-                <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                <DialogContent className="max-w-[95vw] sm:max-w-2xl max-h-[85vh] sm:max-h-[80vh] overflow-y-auto p-4 sm:p-6">
                   <DialogHeader>
-                    <DialogTitle className="font-serif text-2xl font-bold text-primary">
+                    <DialogTitle className="font-serif text-lg sm:text-xl md:text-2xl font-bold text-primary">
                       Módulo {module.number} - {module.title}
                     </DialogTitle>
-                    <DialogDescription className="text-muted-foreground">
+                    <DialogDescription className="text-xs sm:text-sm text-muted-foreground">
                       Detalhes e procedimentos deste módulo
                     </DialogDescription>
                   </DialogHeader>
                   
-                  <div className="mt-4 space-y-3">
-                    <h4 className="font-semibold text-lg mb-3">Conteúdo do módulo:</h4>
-                    <ul className="space-y-2">
+                  <div className="mt-3 sm:mt-4 space-y-2 sm:space-y-3">
+                    <h4 className="font-semibold text-base sm:text-lg mb-2 sm:mb-3">Conteúdo do módulo:</h4>
+                    <ul className="space-y-1.5 sm:space-y-2">
                       {module.topics.map((topic, topicIndex) => (
                         <li 
                           key={topicIndex}
-                          className="text-sm text-foreground flex items-start gap-3 p-3 rounded-lg bg-muted/30"
+                          className="text-xs sm:text-sm text-foreground flex items-start gap-2 sm:gap-3 p-2 sm:p-3 rounded-lg bg-muted/30"
                         >
-                          <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                          <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-primary mt-1.5 sm:mt-2 flex-shrink-0" />
                           <span className="flex-1">{topic}</span>
                         </li>
                       ))}

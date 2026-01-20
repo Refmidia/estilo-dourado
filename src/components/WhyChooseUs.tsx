@@ -23,7 +23,7 @@ export function WhyChooseUs() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           {siteConfig.whyChooseUs.map((reason, index) => {
             let icon = CheckCircle;
             if (reason.includes("Google Maps")) icon = MapPin;
@@ -39,17 +39,17 @@ export function WhyChooseUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="card-premium p-6 flex items-start gap-4"
+                className="card-premium p-4 sm:p-5 md:p-6 flex items-start gap-3 sm:gap-4"
               >
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  {icon === CheckCircle && <CheckCircle className="text-primary" size={24} />}
-                  {icon === MapPin && <MapPin className="text-primary" size={24} />}
-                  {icon === TrendingUp && <TrendingUp className="text-primary" size={24} />}
-                  {icon === Award && <Award className="text-primary" size={24} />}
-                  {icon === Users && <Users className="text-primary" size={24} />}
-                  {icon === Briefcase && <Briefcase className="text-primary" size={24} />}
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  {icon === CheckCircle && <CheckCircle className="text-primary" size={20} />}
+                  {icon === MapPin && <MapPin className="text-primary" size={20} />}
+                  {icon === TrendingUp && <TrendingUp className="text-primary" size={20} />}
+                  {icon === Award && <Award className="text-primary" size={20} />}
+                  {icon === Users && <Users className="text-primary" size={20} />}
+                  {icon === Briefcase && <Briefcase className="text-primary" size={20} />}
                 </div>
-                <p className="text-sm text-foreground font-medium">{reason}</p>
+                <p className="text-xs sm:text-sm text-foreground font-medium">{reason}</p>
               </motion.div>
             );
           })}

@@ -12,11 +12,11 @@ export const siteConfig = {
 
   // Informações da escola
   schoolName: "Fábrica de Estilo",
-  schoolTagline: "100% Dinâmico com mais de 70 alunos formados no Japão 🇯🇵",
+  schoolTagline: "100% Dinâmico com mais de 100 alunos formados no Japão 🇯🇵",
   
   // Estatísticas
   stats: {
-    studentsGraduated: "70+",
+    studentsGraduated: "100+",
     studentsGraduatedText: "Alunos formados no Japão",
     instagramFollowers: "500 mil+",
     jobsCompleted: "5.000+",
@@ -70,7 +70,7 @@ export const siteConfig = {
     achievements: [
       "Professores certificados e experientes",
       "Metodologia única Japão-Brasil",
-      "Mais de 70 alunos formados no Japão",
+      "Mais de 100 alunos formados no Japão",
       "Experiência prática no mercado japonês",
     ],
   },
@@ -111,7 +111,7 @@ export const siteConfig = {
       number: "04",
       title: "Técnicas de Corte",
       topics: [
-        "Social",
+        "Social (Clássico, Moderno e na Tesoura)",
         "Fade / Low Fade",
         "Mid Fade",
         "High Fade",
@@ -211,18 +211,8 @@ export const siteConfig = {
   // Depoimentos
   testimonials: [
     {
-      name: "Kalina Cardoso",
-      content: "O curso da fabrica de estilo foi muito bom ,técnica de corte ,barba e como fazer o atendimento ao cliente foi tudo ensinado perfeitamente !!!",
-      rating: 5,
-    },
-    {
-      name: "Naomi Suenaga",
-      content: "Gostei muito de fazer o curso, não só aprende a cortar cabelo, aprende também a como tartar os clientes, controlar as emoções na hora do corte, e que sempre son os detalhes que vas os clientes voltarem.",
-      rating: 5,
-    },
-    {
-      name: "Jean Marcelo",
-      content: "O curso da Fabrica de Estilo superou todas as minhas expectativas em relação a técnica de corte e profissionalismo durante o atendimento, é realmente um curso mais que completo. Já conclui o curso preparado pra trazer profissionalismo e confiança para cliente, top demais.",
+      name: "Akiko",
+      content: "Fazer o curso na fábrica de estilo com o professor Marcelo foi, sem dúvida, a melhor escolha que poderia ter feito. A experiência foi incrível e superou todas as expectativas. O professor Marcelo demonstra profissionalismo, domínio do conteúdo e uma forma de ensinar clara e motivadora, que torna o aprendizado leve e, ao mesmo tempo, profundo. Cada aula foi enriquecedora e contribuiu de maneira significativa para meu crescimento. Saio desse curso com a certeza de que fiz a decisão certa e com muito aprendizado para levar adiante.",
       rating: 5,
     },
     {
@@ -231,8 +221,28 @@ export const siteConfig = {
       rating: 5,
     },
     {
-      name: "Akiko",
-      content: "Fazer o curso na fábrica de estilo com o professor Marcelo foi, sem dúvida, a melhor escolha que poderia ter feito. A experiência foi incrível e superou todas as expectativas. O professor Marcelo demonstra profissionalismo, domínio do conteúdo e uma forma de ensinar clara e motivadora, que torna o aprendizado leve e, ao mesmo tempo, profundo. Cada aula foi enriquecedora e contribuiu de maneira significativa para meu crescimento. Saio desse curso com a certeza de que fiz a decisão certa e com muito aprendizado para levar adiante.",
+      name: "Jean Marcelo",
+      content: "O curso da Fabrica de Estilo superou todas as minhas expectativas em relação a técnica de corte e profissionalismo durante o atendimento, é realmente um curso mais que completo. Já conclui o curso preparado pra trazer profissionalismo e confiança para cliente, top demais.",
+      rating: 5,
+    },
+    {
+      name: "Kalina Cardoso",
+      content: "O curso da fabrica de estilo foi muito bom ,técnica de corte ,barba e como fazer o atendimento ao cliente foi tudo ensinado perfeitamente !!!",
+      rating: 5,
+    },
+    {
+      name: "Massato",
+      content: "Concluir o curso de barbearia na Fábrica de Estilo foi um divisor de águas na minha trajetória profissional. Desde o primeiro dia, percebi que o foco não era apenas 'cortar cabelo', mas sim entender o visagismo, o atendimento ao cliente e a arte por trás de cada detalhe. Saio daqui me sentindo um profissional completo e preparado para o mercado. Recomendo a todos que buscam excelência e técnica de verdade!",
+      rating: 5,
+    },
+    {
+      name: "Milena Airi",
+      content: "Realizei um curso de barbearia com a Fábrica de estilo e não poderia estar mais satisfeita!! Aprendi técnicas avançadas de corte, degradê e barba terapia que mudaram minha visão sobre a profissão. Saio daqui com uma bagagem incrível e pronta para os desafios da barbearia. E não poderia deixar de agradecer os meus professores Allan e Marcelo",
+      rating: 5,
+    },
+    {
+      name: "Naomi Suenaga",
+      content: "Gostei muito de fazer o curso, não só aprende a cortar cabelo, aprende também a como tartar os clientes, controlar as emoções na hora do corte, e que sempre son os detalhes que vas os clientes voltarem.",
       rating: 5,
     },
     {
@@ -243,11 +253,6 @@ export const siteConfig = {
     {
       name: "Willian Kayo",
       content: "Eu me impressionei com o método de ensino da Fábrica de estilo fiz o curso e no meio do curso eu já estava cortando cabelo, o método usado é fácil prático e muito bem explicado, terminei o curso cortando como um profissional. Só agradeço 🙏 e indico de mais.",
-      rating: 5,
-    },
-    {
-      name: "Milena Airi",
-      content: "Realizei um curso de barbearia com a Fábrica de estilo e não poderia estar mais satisfeita!! Aprendi técnicas avançadas de corte, degradê e barba terapia que mudaram minha visão sobre a profissão. Saio daqui com uma bagagem incrível e pronta para os desafios da barbearia. E não poderia deixar de agradecer os meus professores Allan e Marcelo",
       rating: 5,
     },
   ],

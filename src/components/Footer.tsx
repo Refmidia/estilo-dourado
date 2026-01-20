@@ -16,28 +16,28 @@ export function Footer() {
   const { t } = useTranslation();
   
   return (
-    <footer className="py-12 section-dark border-t border-border">
+    <footer className="py-8 sm:py-10 md:py-12 section-dark border-t border-border">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-xl font-bold text-gold-gradient mb-4">
+            <h3 className="font-serif text-lg sm:text-xl font-bold text-gold-gradient mb-3 sm:mb-4">
               {siteConfig.schoolName}
             </h3>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs sm:text-sm text-muted-foreground">
               {siteConfig.schoolTagline}
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h4 className="font-semibold mb-4">Navegação</h4>
-            <nav className="grid grid-cols-2 gap-2">
+            <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Navegação</h4>
+            <nav className="grid grid-cols-2 gap-1.5 sm:gap-2">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   {t(item.key)}
                 </a>
@@ -47,24 +47,24 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4">Contato</h4>
-            <div className="space-y-3">
+            <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Contato</h4>
+            <div className="space-y-2 sm:space-y-3">
               <a
                 href={siteConfig.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors"
               >
-                <MessageCircle size={18} />
+                <MessageCircle size={16} className="sm:w-[18px] sm:h-[18px]" />
                 WhatsApp
               </a>
               <a
                 href={siteConfig.instagramLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors"
               >
-                <Instagram size={18} />
+                <Instagram size={16} className="sm:w-[18px] sm:h-[18px]" />
                 Instagram
               </a>
             </div>
@@ -72,17 +72,17 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground text-center md:text-left">
+        <div className="pt-6 sm:pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4">
+          <p className="text-xs sm:text-sm text-muted-foreground text-center md:text-left">
             © {new Date().getFullYear()} {siteConfig.schoolName}. {t("footer.rights")}.
           </p>
           <a
             href={siteConfig.whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-gold text-sm"
+            className="btn-gold text-xs sm:text-sm px-3 sm:px-4 py-2"
           >
-            <MessageCircle size={16} className="inline mr-2" />
+            <MessageCircle size={14} className="sm:w-4 sm:h-4 inline mr-1.5 sm:mr-2" />
             {t("header.whatsapp")}
           </a>
         </div>

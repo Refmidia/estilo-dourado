@@ -34,7 +34,7 @@ export function Bonuses() {
           <span className="text-sm font-medium">Bônus disponíveis por tempo limitado</span>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
           {siteConfig.bonuses.map((bonus, index) => (
             <motion.div
               key={index}
@@ -42,21 +42,21 @@ export function Bonuses() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="card-premium p-6 relative overflow-hidden group"
+              className="card-premium p-4 sm:p-5 md:p-6 relative overflow-hidden group"
             >
               {/* Value badge */}
-              <div className="absolute top-4 right-4">
-                <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded-full">
+              <div className="absolute top-3 sm:top-4 right-3 sm:right-4">
+                <span className="text-[10px] sm:text-xs font-bold text-primary bg-primary/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full">
                   {bonus.value}
                 </span>
               </div>
 
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <Gift className="text-primary" size={24} />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                <Gift className="text-primary" size={20} />
               </div>
 
-              <h3 className="font-semibold text-lg mb-2">{bonus.title}</h3>
-              <p className="text-sm text-muted-foreground">{bonus.description}</p>
+              <h3 className="font-semibold text-base sm:text-lg mb-1.5 sm:mb-2">{bonus.title}</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground">{bonus.description}</p>
             </motion.div>
           ))}
         </div>

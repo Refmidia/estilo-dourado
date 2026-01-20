@@ -49,90 +49,90 @@ export function Offer() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto"
         >
-          <div className="card-premium p-8 md:p-12 border-gold-gradient gold-glow">
+          <div className="card-premium p-4 sm:p-6 md:p-8 lg:p-12 border-gold-gradient gold-glow">
 
             {/* Price */}
-            <div className="text-center mb-8 space-y-6">
+            <div className="text-center mb-6 sm:mb-8 space-y-4 sm:space-y-6">
               {/* Curso Profissional */}
-              <div className="pb-6 border-b border-border">
-                <h3 className="text-lg font-semibold mb-2 text-primary">💈 {siteConfig.pricing.professional.title}</h3>
-                <p className="text-sm text-muted-foreground mb-3">({siteConfig.pricing.professional.hours})</p>
-                <p className="text-4xl md:text-5xl font-bold text-primary">
+              <div className="pb-4 sm:pb-6 border-b border-border">
+                <h3 className="text-base sm:text-lg font-semibold mb-2 text-primary">💈 {siteConfig.pricing.professional.title}</h3>
+                <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3">({siteConfig.pricing.professional.hours})</p>
+                <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
                   {siteConfig.pricing.professional.price} {siteConfig.pricing.professional.currency}
                 </p>
               </div>
               
               {/* Curso VIP */}
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-primary">💈 {siteConfig.pricing.vip.title}</h3>
-                <p className="text-sm text-muted-foreground mb-3">({siteConfig.pricing.vip.hours})</p>
-                <p className="text-4xl md:text-5xl font-bold text-primary">
+                <h3 className="text-base sm:text-lg font-semibold mb-2 text-primary">💈 {siteConfig.pricing.vip.title}</h3>
+                <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3">({siteConfig.pricing.vip.hours})</p>
+                <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
                   {siteConfig.pricing.vip.price} {siteConfig.pricing.vip.currency}
                 </p>
               </div>
             </div>
 
             {/* Payment Methods */}
-            <div className="mb-8">
-              <h4 className="font-semibold mb-4 text-center">Formas de pagamento:</h4>
-              <div className="grid grid-cols-2 gap-2">
+            <div className="mb-6 sm:mb-8">
+              <h4 className="font-semibold mb-3 sm:mb-4 text-center text-sm sm:text-base">Formas de pagamento:</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {siteConfig.paymentMethods.map((method, index) => (
-                  <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground bg-muted/30 px-3 py-2 rounded-md">
-                    <CheckCircle className="text-primary flex-shrink-0" size={16} />
-                    {method}
+                  <div key={index} className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground bg-muted/30 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md">
+                    <CheckCircle className="text-primary flex-shrink-0" size={14} />
+                    <span className="break-words">{method}</span>
                   </div>
                 ))}
               </div>
-              <p className="text-center text-sm text-muted-foreground mt-4">
+              <p className="text-center text-xs sm:text-sm text-muted-foreground mt-3 sm:mt-4">
                 Informações: {siteConfig.contactPhone}
               </p>
             </div>
 
             {/* What's included */}
-            <div className="mb-8">
-              <h4 className="font-semibold mb-4 text-center">O que está incluído:</h4>
-              <div className="grid md:grid-cols-2 gap-3">
+            <div className="mb-6 sm:mb-8">
+              <h4 className="font-semibold mb-3 sm:mb-4 text-center text-sm sm:text-base">O que está incluído:</h4>
+              <div className="grid sm:grid-cols-2 gap-2 sm:gap-3">
                 {includes.map((item, index) => (
-                  <div key={index} className="flex items-center gap-2">
-                    <CheckCircle className="text-primary flex-shrink-0" size={18} />
-                    <span className="text-sm text-muted-foreground">{item}</span>
+                  <div key={index} className="flex items-start gap-2">
+                    <CheckCircle className="text-primary flex-shrink-0 mt-0.5" size={16} />
+                    <span className="text-xs sm:text-sm text-muted-foreground">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* CTAs */}
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               <a
                 href={siteConfig.checkoutLink}
-                className="btn-gold w-full text-center text-lg py-4 flex items-center justify-center gap-2 gold-glow-hover animate-glow"
+                className="btn-gold w-full text-center text-sm sm:text-base md:text-lg py-3 sm:py-4 flex items-center justify-center gap-2 gold-glow-hover animate-glow"
               >
-                <Zap size={20} />
+                <Zap size={18} className="sm:w-5 sm:h-5" />
                 Quero me inscrever agora
               </a>
               <a
                 href={siteConfig.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-gold-outline w-full text-center py-4 flex items-center justify-center gap-2"
+                className="btn-gold-outline w-full text-center text-sm sm:text-base py-3 sm:py-4 flex items-center justify-center gap-2"
               >
-                <MessageCircle size={20} />
+                <MessageCircle size={18} className="sm:w-5 sm:h-5" />
                 Falar no WhatsApp
               </a>
             </div>
 
             {/* Trust badges */}
-            <div className="flex flex-wrap items-center justify-center gap-6 mt-8 pt-6 border-t border-border">
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Shield size={18} className="text-primary" />
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-6 mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-border">
+              <div className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-muted-foreground">
+                <Shield size={16} className="sm:w-[18px] sm:h-[18px] text-primary" />
                 Compra segura
               </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Clock size={18} className="text-primary" />
+              <div className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-muted-foreground">
+                <Clock size={16} className="sm:w-[18px] sm:h-[18px] text-primary" />
                 Acesso imediato
               </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CreditCard size={18} className="text-primary" />
+              <div className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-muted-foreground">
+                <CreditCard size={16} className="sm:w-[18px] sm:h-[18px] text-primary" />
                 Até 12x no cartão
               </div>
             </div>

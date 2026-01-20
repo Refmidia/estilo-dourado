@@ -65,7 +65,7 @@ export function Categories() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
           {categories.map((category, index) => (
             <motion.a
               key={category.href}
@@ -74,18 +74,18 @@ export function Categories() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group card-premium p-6 md:p-8 text-center hover:border-primary/50 transition-all duration-300"
+              className="group card-premium p-4 sm:p-5 md:p-6 lg:p-8 text-center hover:border-primary/50 transition-all duration-300"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-primary/10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
-                <category.icon size={28} />
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-primary/10 text-primary mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                <category.icon size={24} className="sm:w-7 sm:h-7 md:w-7 md:h-7" />
               </div>
-              <h3 className="font-serif text-lg md:text-xl font-semibold mb-2">
+              <h3 className="font-serif text-base sm:text-lg md:text-xl font-semibold mb-1.5 sm:mb-2">
                 {category.title}
               </h3>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">
                 {category.description}
               </p>
-              <span className="inline-flex items-center text-primary text-sm font-medium group-hover:underline">
+              <span className="inline-flex items-center text-primary text-xs sm:text-sm font-medium group-hover:underline">
                 Acessar →
               </span>
             </motion.a>

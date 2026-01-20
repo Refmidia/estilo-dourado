@@ -66,15 +66,34 @@
 
   html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
   }
 
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel', serif;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 640px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
 }
 
@@ -148,6 +167,8 @@
   /* Premium Button Styles */
   .btn-gold {
     @apply bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-lg transition-all duration-300;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .btn-gold:hover {
@@ -155,13 +176,23 @@
     box-shadow: 0 0 25px hsl(43 67% 52% / 0.4);
   }
 
+  .btn-gold:active {
+    @apply scale-100;
+  }
+
   .btn-gold-outline {
     @apply bg-transparent text-primary border border-primary font-semibold px-6 py-3 rounded-lg transition-all duration-300;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .btn-gold-outline:hover {
     @apply bg-primary/10;
     box-shadow: 0 0 20px hsl(43 67% 52% / 0.2);
+  }
+
+  .btn-gold-outline:active {
+    @apply scale-95;
   }
 
   /* Accordion Styles */

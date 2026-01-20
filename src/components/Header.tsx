@@ -57,7 +57,7 @@ export function Header() {
             <img 
               src="/logo.png" 
               alt={siteConfig.schoolName}
-              className="h-10 md:h-12 w-auto object-contain"
+              className="h-8 sm:h-10 md:h-12 w-auto object-contain"
             />
           </a>
 
@@ -97,10 +97,11 @@ export function Header() {
               href={siteConfig.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-gold flex items-center gap-2 text-sm"
+              className="btn-gold flex items-center gap-2 text-xs sm:text-sm px-3 sm:px-4 py-2"
             >
-              <MessageCircle size={18} />
-              {t("header.whatsapp")}
+              <MessageCircle size={16} className="sm:w-[18px] sm:h-[18px]" />
+              <span className="hidden sm:inline">{t("header.whatsapp")}</span>
+              <span className="sm:hidden">WhatsApp</span>
             </a>
           </div>
 

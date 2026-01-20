@@ -43,7 +43,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight"
+              className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight px-2 sm:px-0"
             >
               {t("hero.title")}
             </motion.h1>
@@ -52,7 +52,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-lg md:text-xl text-primary mb-6 max-w-xl mx-auto lg:mx-0 font-semibold"
+              className="text-base sm:text-lg md:text-xl text-primary mb-4 sm:mb-6 max-w-xl mx-auto lg:mx-0 font-semibold px-2 sm:px-0"
             >
               {t("hero.subtitle")}
             </motion.p>
@@ -61,7 +61,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.45 }}
-              className="text-base md:text-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0"
+              className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0 px-2 sm:px-0"
             >
               {siteConfig.schoolTagline}
             </motion.p>
@@ -71,19 +71,19 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-6 sm:mb-8 px-2 sm:px-0"
             >
               <a
                 href="#oferta"
-                className="btn-gold text-base md:text-lg px-8 py-4 text-center gold-glow-hover"
+                className="btn-gold text-sm sm:text-base md:text-lg px-6 sm:px-8 py-3 sm:py-4 text-center gold-glow-hover w-full sm:w-auto"
               >
                 {t("hero.cta.primary")}
               </a>
               <a
                 href="#modulos"
-                className="btn-gold-outline text-base md:text-lg px-8 py-4 text-center flex items-center justify-center gap-2"
+                className="btn-gold-outline text-sm sm:text-base md:text-lg px-6 sm:px-8 py-3 sm:py-4 text-center flex items-center justify-center gap-2 w-full sm:w-auto"
               >
-                <Play size={20} />
+                <Play size={18} className="sm:w-5 sm:h-5" />
                 {t("hero.cta.secondary")}
               </a>
             </motion.div>
@@ -93,15 +93,15 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-wrap gap-3 justify-center lg:justify-start"
+              className="flex flex-wrap gap-2 sm:gap-3 justify-center lg:justify-start px-2 sm:px-0"
             >
               {badges.map((badge, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-2 text-sm text-muted-foreground bg-muted/30 px-3 py-2 rounded-full"
+                  className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-muted-foreground bg-muted/30 px-2 sm:px-3 py-1.5 sm:py-2 rounded-full"
                 >
-                  <CheckCircle size={16} className="text-primary" />
-                  {badge}
+                  <CheckCircle size={14} className="sm:w-4 sm:h-4 text-primary flex-shrink-0" />
+                  <span className="whitespace-nowrap">{badge}</span>
                 </div>
               ))}
             </motion.div>
@@ -119,7 +119,7 @@ export function Hero() {
               <img
                 src={heroImage}
                 alt="Barbeiro profissional em barbearia de luxo"
-                className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+                className="w-full h-[300px] sm:h-[350px] md:h-[450px] lg:h-[550px] xl:h-[600px] object-cover"
               />
               
               {/* Floating Stats */}
@@ -127,20 +127,20 @@ export function Hero() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.8 }}
-                className="absolute bottom-6 left-6 right-6 z-20 bg-card/90 backdrop-blur-sm rounded-xl p-4 border border-border"
+                className="absolute bottom-3 sm:bottom-4 md:bottom-6 left-3 sm:left-4 md:left-6 right-3 sm:right-4 md:right-6 z-20 bg-card/90 backdrop-blur-sm rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 border border-border"
               >
-                <div className="grid grid-cols-3 gap-4 text-center">
+                <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 text-center">
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-primary">10+</p>
-                    <p className="text-xs md:text-sm text-muted-foreground">{t("hero.stats.modules")}</p>
+                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary">10+</p>
+                    <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">{t("hero.stats.modules")}</p>
                   </div>
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-primary">{siteConfig.stats.studentsGraduated}</p>
-                    <p className="text-xs md:text-sm text-muted-foreground">{t("hero.stats.students")}</p>
+                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary">{siteConfig.stats.studentsGraduated}</p>
+                    <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">{t("hero.stats.students")}</p>
                   </div>
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-primary">{siteConfig.stats.jobsCompleted}</p>
-                    <p className="text-xs md:text-sm text-muted-foreground">Trabalhos</p>
+                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary">{siteConfig.stats.jobsCompleted}</p>
+                    <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">Trabalhos</p>
                   </div>
                 </div>
               </motion.div>
