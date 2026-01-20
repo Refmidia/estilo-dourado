@@ -21,9 +21,11 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-lg sm:text-xl font-bold text-gold-gradient mb-3 sm:mb-4">
-              {siteConfig.schoolName}
-            </h3>
+            <img 
+              src="/logo.png" 
+              alt={siteConfig.schoolName}
+              className="h-10 sm:h-12 md:h-14 w-auto object-contain mb-3 sm:mb-4"
+            />
             <p className="text-xs sm:text-sm text-muted-foreground">
               {siteConfig.schoolTagline}
             </p>
