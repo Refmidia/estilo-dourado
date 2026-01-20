@@ -28,7 +28,6 @@ export const siteConfig = {
   whyChooseUs: [
     "1ª opção na pesquisa Google Maps por barbearia em Aichi-ken!",
     "No Instagram já somamos mais de 500 mil seguidores no @fabricadeestiloo",
-    "Mais de 5 mil trabalhos realizados no 🇯🇵",
     "Credibilidade com nosso público",
     "Plano de carreira com nossos alunos",
     "Estágio",

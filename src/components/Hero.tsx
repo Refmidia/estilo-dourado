@@ -121,29 +121,6 @@ export function Hero() {
                 alt="Barbeiro profissional em barbearia de luxo"
                 className="w-full h-[300px] sm:h-[350px] md:h-[450px] lg:h-[550px] xl:h-[600px] object-cover"
               />
-              
-              {/* Floating Stats */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.8 }}
-                className="absolute bottom-3 sm:bottom-4 md:bottom-6 left-3 sm:left-4 md:left-6 right-3 sm:right-4 md:right-6 z-20 bg-card/90 backdrop-blur-sm rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 border border-border"
-              >
-                <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 text-center">
-                  <div>
-                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary">10+</p>
-                    <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">{t("hero.stats.modules")}</p>
-                  </div>
-                  <div>
-                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary">{siteConfig.stats.studentsGraduated}</p>
-                    <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">{t("hero.stats.students")}</p>
-                  </div>
-                  <div>
-                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary">{siteConfig.stats.jobsCompleted}</p>
-                    <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">Trabalhos</p>
-                  </div>
-                </div>
-              </motion.div>
             </div>
           </motion.div>
         </div>
