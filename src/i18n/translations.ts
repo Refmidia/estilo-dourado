@@ -2,6 +2,7 @@ export type TranslationKey =
   | "nav.home"
   | "nav.modules"
   | "nav.bonuses"
+  | "nav.about"
   | "nav.professor"
   | "nav.testimonials"
   | "nav.offer"
@@ -54,6 +55,7 @@ export const translations: Record<"pt" | "en" | "ja", Record<TranslationKey, str
     "nav.home": "Início",
     "nav.modules": "Módulos",
     "nav.bonuses": "Bônus",
+    "nav.about": "Sobre Mim",
     "nav.professor": "Professor",
     "nav.testimonials": "Depoimentos",
     "nav.offer": "Oferta",
@@ -105,6 +107,7 @@ export const translations: Record<"pt" | "en" | "ja", Record<TranslationKey, str
     "nav.home": "Home",
     "nav.modules": "Modules",
     "nav.bonuses": "Bonuses",
+    "nav.about": "About Me",
     "nav.professor": "Professor",
     "nav.testimonials": "Testimonials",
     "nav.offer": "Offer",
@@ -156,6 +159,7 @@ export const translations: Record<"pt" | "en" | "ja", Record<TranslationKey, str
     "nav.home": "ホーム",
     "nav.modules": "モジュール",
     "nav.bonuses": "ボーナス",
+    "nav.about": "私について",
     "nav.professor": "講師",
     "nav.testimonials": "お客様の声",
     "nav.offer": "オファー",

@@ -15,6 +15,7 @@ const navItems = [
   { key: "nav.home" as const, href: "#inicio" },
   { key: "nav.modules" as const, href: "#modulos" },
   { key: "nav.bonuses" as const, href: "#bonus" },
+  { key: "nav.about" as const, href: "#sobre-mim" },
   { key: "nav.professor" as const, href: "#professor" },
   { key: "nav.testimonials" as const, href: "#depoimentos" },
   { key: "nav.offer" as const, href: "#oferta" },

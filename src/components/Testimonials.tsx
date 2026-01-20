@@ -63,9 +63,6 @@ export function Testimonials() {
                 <p className="font-semibold text-foreground">
                   {testimonials[currentIndex].name}
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  {testimonials[currentIndex].role}
-                </p>
               </motion.div>
             </AnimatePresence>
           </div>

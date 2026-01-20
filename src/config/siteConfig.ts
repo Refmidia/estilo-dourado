@@ -211,33 +211,43 @@ export const siteConfig = {
   // Depoimentos
   testimonials: [
     {
-      name: "Ricardo Santos",
-      role: "Barbeiro Profissional",
-      content: "Saí do zero e em 6 meses já estava trabalhando. O método é muito didático e o suporte é incrível!",
+      name: "Kalina Cardoso",
+      content: "O curso da fabrica de estilo foi muito bom ,técnica de corte ,barba e como fazer o atendimento ao cliente foi tudo ensinado perfeitamente !!!",
       rating: 5,
     },
     {
-      name: "Felipe Oliveira",
-      role: "Dono de Barbearia",
-      content: "Fiz o curso para aperfeiçoar minhas técnicas e consegui aumentar meus preços em 40%. Investimento que valeu cada centavo.",
+      name: "Naomi Suenaga",
+      content: "Gostei muito de fazer o curso, não só aprende a cortar cabelo, aprende também a como tartar os clientes, controlar as emoções na hora do corte, e que sempre son os detalhes que vas os clientes voltarem.",
       rating: 5,
     },
     {
-      name: "Lucas Mendes",
-      role: "Ex-aluno",
-      content: "A organização dos módulos facilita muito o aprendizado. Recomendo para quem quer levar a barbearia a sério.",
+      name: "Jean Marcelo",
+      content: "O curso da Fabrica de Estilo superou todas as minhas expectativas em relação a técnica de corte e profissionalismo durante o atendimento, é realmente um curso mais que completo. Já conclui o curso preparado pra trazer profissionalismo e confiança para cliente, top demais.",
       rating: 5,
     },
     {
-      name: "André Costa",
-      role: "Barbeiro Iniciante",
-      content: "Nunca tinha pegado em uma tesoura antes. Hoje atendo clientes fixos toda semana. Gratidão!",
+      name: "Allan Maruyama",
+      content: "Comecei na Fábrica de Estilo sem saber absolutamente nada sobre a profissão. No início foi difícil, e precisei me esforçar o dobro para acompanhar e evoluir. Com o apoio e a paciência dos professores, cada desafio virou aprendizado. Essa dedicação me levou a crescer dentro da escola e a fazer parte da sua história como um dos professores da instituição. Levo comigo uma base sólida de conhecimento e valores profissionais construídos na Fábrica de Estilo.",
       rating: 5,
     },
     {
-      name: "Bruno Ferreira",
-      role: "Empreendedor",
-      content: "O módulo de gestão me ajudou a estruturar meu negócio. Hoje tenho 3 cadeiras e faturamento consistente.",
+      name: "Akiko",
+      content: "Fazer o curso na fábrica de estilo com o professor Marcelo foi, sem dúvida, a melhor escolha que poderia ter feito. A experiência foi incrível e superou todas as expectativas. O professor Marcelo demonstra profissionalismo, domínio do conteúdo e uma forma de ensinar clara e motivadora, que torna o aprendizado leve e, ao mesmo tempo, profundo. Cada aula foi enriquecedora e contribuiu de maneira significativa para meu crescimento. Saio desse curso com a certeza de que fiz a decisão certa e com muito aprendizado para levar adiante.",
+      rating: 5,
+    },
+    {
+      name: "Sérgio Hitoshi",
+      content: "Quero deixar meu sincero agradecimento à Fábrica de Estilo – Scholl Barbearia por todo o aprendizado que tive durante o período em que fui aluno dessa escola. Mais do que técnicas de barbearia, aqui aprendi disciplina, responsabilidade, atendimento ao cliente e a importância de fazer cada detalhe com excelência. Cada aula, cada orientação e cada correção fizeram parte da minha evolução profissional e pessoal. Os ensinamentos recebidos durante o curso levo comigo até hoje, aplicando no dia a dia da profissão com orgulho e gratidão. Obrigado a todos os instrutores e à equipe por compartilharem conhecimento, experiência e paixão pelo que fazem. Essa formação fez diferença na minha trajetória.",
+      rating: 5,
+    },
+    {
+      name: "Willian Kayo",
+      content: "Eu me impressionei com o método de ensino da Fábrica de estilo fiz o curso e no meio do curso eu já estava cortando cabelo, o método usado é fácil prático e muito bem explicado, terminei o curso cortando como um profissional. Só agradeço 🙏 e indico de mais.",
+      rating: 5,
+    },
+    {
+      name: "Milena Airi",
+      content: "Realizei um curso de barbearia com a Fábrica de estilo e não poderia estar mais satisfeita!! Aprendi técnicas avançadas de corte, degradê e barba terapia que mudaram minha visão sobre a profissão. Saio daqui com uma bagagem incrível e pronta para os desafios da barbearia. E não poderia deixar de agradecer os meus professores Allan e Marcelo",
       rating: 5,
     },
   ],
