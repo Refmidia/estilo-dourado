@@ -32,7 +32,7 @@ export function AboutMe() {
                 Marcelo Almeida
               </h3>
               <p className="text-primary text-sm sm:text-base md:text-lg italic px-2">
-                onde a necessidade virou talento e o talento virou referência.
+                Onde a necessidade virou talento e o talento virou referência.
               </p>
             </div>
 
@@ -67,7 +67,7 @@ export function AboutMe() {
                 Com muito esforço, dedicação e disciplina, passei a estudar, treinar e praticar todos os dias. Comecei cortando o cabelo dos meus irmãos. Depois vieram os primeiros clientes. E assim, da forma mais simples possível, iniciei minha caminhada na barbearia.
               </p>
 
-              <div className="pt-4 border-t border-border">
+              <div className="pt-4 border-t border-border text-left">
                 <p className="text-base sm:text-lg font-semibold text-foreground mb-2">
                   Hoje, aos 42 anos, vivo exclusivamente do meu talento.
                 </p>
@@ -77,7 +77,7 @@ export function AboutMe() {
               </div>
 
               {/* Credenciais */}
-              <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-border">
+              <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-border text-left">
                 <div className="space-y-2">
                   <p className="text-foreground font-semibold text-sm sm:text-base">Minhas Credenciais:</p>
                   <ul className="space-y-1 text-xs sm:text-sm">

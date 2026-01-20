@@ -211,13 +211,13 @@ export const siteConfig = {
   // Depoimentos
   testimonials: [
     {
-      name: "Akiko",
-      content: "Fazer o curso na fábrica de estilo com o professor Marcelo foi, sem dúvida, a melhor escolha que poderia ter feito. A experiência foi incrível e superou todas as expectativas. O professor Marcelo demonstra profissionalismo, domínio do conteúdo e uma forma de ensinar clara e motivadora, que torna o aprendizado leve e, ao mesmo tempo, profundo. Cada aula foi enriquecedora e contribuiu de maneira significativa para meu crescimento. Saio desse curso com a certeza de que fiz a decisão certa e com muito aprendizado para levar adiante.",
+      name: "Allan Maruyama",
+      content: "Comecei na Fábrica de Estilo sem saber absolutamente nada sobre a profissão. No início foi difícil, e precisei me esforçar o dobro para acompanhar e evoluir. Com o apoio e a paciência dos professores, cada desafio virou aprendizado. Essa dedicação me levou a crescer dentro da escola e a fazer parte da sua história como um dos professores da instituição. Levo comigo uma base sólida de conhecimento e valores profissionais construídos na Fábrica de Estilo.",
       rating: 5,
     },
     {
-      name: "Allan Maruyama",
-      content: "Comecei na Fábrica de Estilo sem saber absolutamente nada sobre a profissão. No início foi difícil, e precisei me esforçar o dobro para acompanhar e evoluir. Com o apoio e a paciência dos professores, cada desafio virou aprendizado. Essa dedicação me levou a crescer dentro da escola e a fazer parte da sua história como um dos professores da instituição. Levo comigo uma base sólida de conhecimento e valores profissionais construídos na Fábrica de Estilo.",
+      name: "Akiko",
+      content: "Fazer o curso na fábrica de estilo com o professor Marcelo foi, sem dúvida, a melhor escolha que poderia ter feito. A experiência foi incrível e superou todas as expectativas. O professor Marcelo demonstra profissionalismo, domínio do conteúdo e uma forma de ensinar clara e motivadora, que torna o aprendizado leve e, ao mesmo tempo, profundo. Cada aula foi enriquecedora e contribuiu de maneira significativa para meu crescimento. Saio desse curso com a certeza de que fiz a decisão certa e com muito aprendizado para levar adiante.",
       rating: 5,
     },
     {
