@@ -14,9 +14,7 @@ const includes = [
   "10 módulos completos",
   "Certificado profissional",
   "Suporte via grupo exclusivo",
-  "Atualizações vitalícias",
   "Todos os bônus inclusos",
-  "Garantia de 7 dias",
 ];
 
 export function Offer() {

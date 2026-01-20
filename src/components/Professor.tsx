@@ -84,18 +84,10 @@ export function Professor() {
               Aprenda com quem realmente entende do assunto e já formou diversos de profissionais de sucesso.
             </p>
 
-            <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 bg-muted/30 rounded-lg">
+            <div className="flex justify-center p-3 sm:p-4 bg-muted/30 rounded-lg">
               <div>
                 <p className="text-xl sm:text-2xl font-bold text-primary">20+</p>
                 <p className="text-[10px] sm:text-xs text-muted-foreground">Anos exp.</p>
-              </div>
-              <div>
-                <p className="text-xl sm:text-2xl font-bold text-primary">5k+</p>
-                <p className="text-[10px] sm:text-xs text-muted-foreground">Alunos</p>
-              </div>
-              <div>
-                <p className="text-xl sm:text-2xl font-bold text-primary">3x</p>
-                <p className="text-[10px] sm:text-xs text-muted-foreground">Premiado</p>
               </div>
             </div>
           </motion.div>

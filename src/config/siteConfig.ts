@@ -260,10 +260,6 @@ export const siteConfig = {
   // FAQ
   faq: [
     {
-      question: "O acesso é vitalício?",
-      answer: "Sim! Após a compra, você terá acesso vitalício a todo o conteúdo do curso e todas as atualizações futuras.",
-    },
-    {
       question: "Tem certificado?",
       answer: "Sim! Ao concluir o curso, você recebe um certificado profissional que pode usar no seu currículo e nas redes sociais.",
     },
@@ -286,10 +282,6 @@ export const siteConfig = {
     {
       question: "Posso assistir no celular?",
       answer: "Sim! A plataforma é 100% responsiva e você pode assistir de qualquer dispositivo.",
-    },
-    {
-      question: "E se eu não gostar do curso?",
-      answer: "Oferecemos garantia de 7 dias. Se não ficar satisfeito, devolvemos 100% do seu investimento.",
     },
   ],
 
