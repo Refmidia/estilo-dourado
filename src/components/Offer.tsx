@@ -88,7 +88,7 @@ export function Offer() {
 
             {/* What's included */}
             <div className="mb-6 sm:mb-8">
-              <h4 className="font-semibold mb-3 sm:mb-4 text-center text-sm sm:text-base">O que está incluído:</h4>
+              <h4 className="font-semibold mb-3 sm:mb-4 text-center text-sm sm:text-base">O que está incluso:</h4>
               <div className="grid sm:grid-cols-2 gap-2 sm:gap-3">
                 {includes.map((item, index) => (
                   <div key={index} className="flex items-start gap-2">

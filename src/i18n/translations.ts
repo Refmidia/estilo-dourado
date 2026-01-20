@@ -92,7 +92,7 @@ export const translations: Record<"pt" | "en" | "ja", Record<TranslationKey, str
     "professor.description": "Aprenda com professores japoneses e brasileiros especializados, com experiência comprovada no mercado japonês e brasileiro.",
     "offer.title": "Acesso completo ao",
     "offer.subtitle": "Oferta Especial",
-    "offer.includes": "O que está incluído",
+    "offer.includes": "O que está incluso",
     "offer.cta.primary": "Quero me inscrever agora",
     "offer.cta.secondary": "Falar no WhatsApp",
     "offer.trust": "Compra segura",

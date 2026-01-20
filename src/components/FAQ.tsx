@@ -59,7 +59,7 @@ export function FAQ() {
           className="text-center mt-12"
         >
           <p className="text-muted-foreground mb-4">
-            Ainda tem dúvidas? Fale com a gente!
+            Ainda tem dúvidas? Entre em Contato!
           </p>
           <a
             href={siteConfig.whatsappLink}
