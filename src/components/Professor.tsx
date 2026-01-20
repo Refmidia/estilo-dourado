@@ -81,12 +81,12 @@ export function Professor() {
               Método Exclusivo
             </h4>
             <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-4 sm:mb-6 px-2">
-              Aprenda com quem realmente entende do assunto e já formou milhares de profissionais de sucesso.
+              Aprenda com quem realmente entende do assunto e já formou diversos de profissionais de sucesso.
             </p>
 
             <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 bg-muted/30 rounded-lg">
               <div>
-                <p className="text-xl sm:text-2xl font-bold text-primary">15+</p>
+                <p className="text-xl sm:text-2xl font-bold text-primary">20+</p>
                 <p className="text-[10px] sm:text-xs text-muted-foreground">Anos exp.</p>
               </div>
               <div>

@@ -32,7 +32,7 @@ export function AboutMe() {
                 Marcelo Almeida
               </h3>
               <p className="text-primary text-sm sm:text-base md:text-lg italic px-2">
-                — onde a necessidade virou talento e o talento virou referência.
+                onde a necessidade virou talento e o talento virou referência.
               </p>
             </div>
 
