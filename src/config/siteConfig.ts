@@ -12,7 +12,7 @@ export const siteConfig = {
 
   // Informações da escola
   schoolName: "Fábrica de Estilo",
-  schoolTagline: "100% Dinâmico com diversos alunos formados no Japão 🇯🇵",
+  schoolTagline: "100% Dinâmico com diversos alunos formados no Japão 🇯🇵 e no Brasil 🇧🇷",
   
   // Estatísticas
   stats: {
