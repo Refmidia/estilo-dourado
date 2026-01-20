@@ -53,7 +53,7 @@ export function Offer() {
             <div className="text-center mb-6 sm:mb-8 space-y-4 sm:space-y-6">
               {/* Curso Profissional */}
               <div className="pb-4 sm:pb-6 border-b border-border">
-                <h3 className="text-base sm:text-lg font-semibold mb-2 text-primary">💈 {siteConfig.pricing.professional.title}</h3>
+                <h3 className="text-base sm:text-lg font-semibold mb-2 text-primary">- {siteConfig.pricing.professional.title}</h3>
                 <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3">({siteConfig.pricing.professional.hours})</p>
                 <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
                   {siteConfig.pricing.professional.price} {siteConfig.pricing.professional.currency}
@@ -62,7 +62,7 @@ export function Offer() {
               
               {/* Curso VIP */}
               <div>
-                <h3 className="text-base sm:text-lg font-semibold mb-2 text-primary">💈 {siteConfig.pricing.vip.title}</h3>
+                <h3 className="text-base sm:text-lg font-semibold mb-2 text-primary">- {siteConfig.pricing.vip.title}</h3>
                 <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3">({siteConfig.pricing.vip.hours})</p>
                 <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
                   {siteConfig.pricing.vip.price} {siteConfig.pricing.vip.currency}
