@@ -268,20 +268,12 @@ export const siteConfig = {
       answer: "Com certeza! O curso foi desenvolvido para levar você do zero ao avançado, passo a passo.",
     },
     {
-      question: "Como recebo o acesso?",
-      answer: "Imediatamente após a confirmação do pagamento, você recebe os dados de acesso no seu e-mail.",
-    },
-    {
       question: "Tem suporte para dúvidas?",
-      answer: "Sim! Oferecemos suporte via grupo exclusivo e e-mail para tirar todas as suas dúvidas.",
+      answer: "Sim! Oferecemos suporte via grupo exclusivo.",
     },
     {
       question: "Quais as formas de pagamento?",
-      answer: "Aceitamos cartão de crédito (até 12x), PIX e boleto bancário.",
-    },
-    {
-      question: "Posso assistir no celular?",
-      answer: "Sim! A plataforma é 100% responsiva e você pode assistir de qualquer dispositivo.",
+      answer: "Aceitamos cartão de crédito (até 24x), PIX e Financiamento próprio",
     },
   ],
 

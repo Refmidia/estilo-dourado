@@ -131,7 +131,7 @@ export function Offer() {
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-muted-foreground">
                 <CreditCard size={16} className="sm:w-[18px] sm:h-[18px] text-primary" />
-                Até 12x no cartão
+                Até 24x no cartão
               </div>
             </div>
           </div>
