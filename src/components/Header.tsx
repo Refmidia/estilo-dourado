@@ -3,6 +3,7 @@ import { Menu, X, MessageCircle, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "@/config/siteConfig";
 import { useTranslation } from "@/hooks/useTranslation";
+import { trackConversion } from "@/lib/conversion";
 import { useLanguage, Language } from "@/contexts/LanguageContext";
 import {
   DropdownMenu,
@@ -98,6 +99,7 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold flex items-center gap-2 text-xs sm:text-sm px-3 sm:px-4 py-2"
+              onClick={() => trackConversion("Contact", { content_name: "WhatsApp - Header" })}
             >
               <MessageCircle size={16} className="sm:w-[18px] sm:h-[18px]" />
               <span className="hidden sm:inline">{t("header.whatsapp")}</span>
@@ -179,6 +181,7 @@ export function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-gold flex items-center justify-center gap-2 mt-2"
+                onClick={() => trackConversion("Contact", { content_name: "WhatsApp - Menu Mobile" })}
               >
                 <MessageCircle size={18} />
                 {t("header.whatsapp")}

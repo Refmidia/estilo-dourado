@@ -1,5 +1,6 @@
 import { MessageCircle, Zap } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { trackConversion } from "@/lib/conversion";
 
 export function StickyMobileBar() {
   return (
@@ -10,6 +11,7 @@ export function StickyMobileBar() {
           target="_blank"
           rel="noopener noreferrer"
           className="btn-gold-outline flex-1 py-3 flex items-center justify-center gap-2 text-sm"
+          onClick={() => trackConversion("Contact", { content_name: "WhatsApp - Mobile Bar" })}
         >
           <MessageCircle size={18} />
           WhatsApp
@@ -17,6 +19,7 @@ export function StickyMobileBar() {
         <a
           href="#oferta"
           className="btn-gold flex-1 py-3 flex items-center justify-center gap-2 text-sm"
+          onClick={() => trackConversion("Lead", { content_name: "Inscrição - Mobile Bar" })}
         >
           <Zap size={18} />
           Inscreva-se

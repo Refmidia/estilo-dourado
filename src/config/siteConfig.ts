@@ -10,6 +10,11 @@ export const siteConfig = {
   instagramLink: "https://www.instagram.com/fabricadeestiloo/",
   contactPhone: "090 1238 5981",
 
+  // Meta (Facebook/Instagram)
+  metaPixelId: "950293184115519",
+  // CAPI: se null, o frontend usa a mesma origem (window.location.origin + '/api/conversion')
+  capiEndpoint: null as string | null,
+
   // Informações da escola
   schoolName: "Fábrica de Estilo",
   schoolTagline: "100% Dinâmico com diversos alunos formados no Japão 🇯🇵 e no Brasil 🇧🇷",

@@ -8,6 +8,7 @@ import {
   CreditCard 
 } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { trackConversion } from "@/lib/conversion";
 
 const includes = [
   "Acesso imediato a todo o conteúdo",
@@ -104,6 +105,7 @@ export function Offer() {
               <a
                 href={siteConfig.checkoutLink}
                 className="btn-gold w-full text-center text-sm sm:text-base md:text-lg py-3 sm:py-4 flex items-center justify-center gap-2 gold-glow-hover animate-glow"
+                onClick={() => trackConversion("Lead", { content_name: "Inscrição - Oferta" })}
               >
                 <Zap size={18} className="sm:w-5 sm:h-5" />
                 Quero me inscrever agora
@@ -113,6 +115,7 @@ export function Offer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-gold-outline w-full text-center text-sm sm:text-base py-3 sm:py-4 flex items-center justify-center gap-2"
+                onClick={() => trackConversion("Contact", { content_name: "WhatsApp - Oferta" })}
               >
                 <MessageCircle size={18} className="sm:w-5 sm:h-5" />
                 Falar no WhatsApp

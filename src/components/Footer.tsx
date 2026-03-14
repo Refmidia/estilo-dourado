@@ -1,6 +1,7 @@
 import { MessageCircle, Instagram } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 import { useTranslation } from "@/hooks/useTranslation";
+import { trackConversion } from "@/lib/conversion";
 
 const navItems = [
   { key: "nav.home" as const, href: "#inicio" },
@@ -56,6 +57,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors"
+                onClick={() => trackConversion("Contact", { content_name: "WhatsApp - Footer" })}
               >
                 <MessageCircle size={16} className="sm:w-[18px] sm:h-[18px]" />
                 WhatsApp
@@ -83,6 +85,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold text-xs sm:text-sm px-3 sm:px-4 py-2"
+            onClick={() => trackConversion("Contact", { content_name: "WhatsApp - Footer CTA" })}
           >
             <MessageCircle size={14} className="sm:w-4 sm:h-4 inline mr-1.5 sm:mr-2" />
             {t("header.whatsapp")}

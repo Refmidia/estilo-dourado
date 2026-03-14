@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { CheckCircle, Play } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 import { useTranslation } from "@/hooks/useTranslation";
+import { trackConversion } from "@/lib/conversion";
 import heroImage from "@/assets/hero-barber.png";
 
 export function Hero() {
@@ -76,12 +77,14 @@ export function Hero() {
               <a
                 href="#oferta"
                 className="btn-gold text-sm sm:text-base md:text-lg px-6 sm:px-8 py-3 sm:py-4 text-center gold-glow-hover w-full sm:w-auto"
+                onClick={() => trackConversion("Lead", { content_name: "Inscrição - Hero" })}
               >
                 {t("hero.cta.primary")}
               </a>
               <a
                 href="#modulos"
                 className="btn-gold-outline text-sm sm:text-base md:text-lg px-6 sm:px-8 py-3 sm:py-4 text-center flex items-center justify-center gap-2 w-full sm:w-auto"
+                onClick={() => trackConversion("ViewContent", { content_name: "Módulos" })}
               >
                 <Play size={18} className="sm:w-5 sm:h-5" />
                 {t("hero.cta.secondary")}

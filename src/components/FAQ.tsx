@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { siteConfig } from "@/config/siteConfig";
+import { trackConversion } from "@/lib/conversion";
 
 export function FAQ() {
   return (
@@ -66,6 +67,7 @@ export function FAQ() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold-outline inline-flex items-center gap-2"
+            onClick={() => trackConversion("Contact", { content_name: "WhatsApp - FAQ" })}
           >
             Falar no WhatsApp
           </a>
