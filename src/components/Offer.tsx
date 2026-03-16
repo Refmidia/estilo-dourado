@@ -4,7 +4,6 @@ import {
   MessageCircle, 
   Shield, 
   Clock, 
-  Zap,
   CreditCard 
 } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
@@ -102,14 +101,6 @@ export function Offer() {
 
             {/* CTAs */}
             <div className="space-y-3 sm:space-y-4">
-              <a
-                href={siteConfig.checkoutLink}
-                className="btn-gold w-full text-center text-sm sm:text-base md:text-lg py-3 sm:py-4 flex items-center justify-center gap-2 gold-glow-hover animate-glow"
-                onClick={() => trackConversion("Lead", { content_name: "Inscrição - Oferta" })}
-              >
-                <Zap size={18} className="sm:w-5 sm:h-5" />
-                Quero me inscrever agora
-              </a>
               <a
                 href={siteConfig.whatsappLink}
                 target="_blank"
