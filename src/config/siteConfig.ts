@@ -6,6 +6,8 @@
 export const siteConfig = {
   // Links principais
   whatsappLink: "https://wa.me/819012385981", // Número do Japão
+  whatsappSchedulingLink:
+    "https://wa.me/819012385981?text=Ola!%20Vim%20pelo%20anuncio%20e%20gostaria%20de%20agendar%20um%20horario%20para%20corte%20de%20cabelo%20ou%20barba.%20Podem%20me%20ajudar%2C%20por%20favor%3F",
   lineLink: "https://line.me/ti/p/rv8Kqbfx5n",
   checkoutLink: "#oferta", // Link do checkout/pagamento
   instagramLink: "https://www.instagram.com/fabricadeestiloo/",

@@ -55,7 +55,7 @@ export default function Agendamentos() {
 
         <section className="mt-6 space-y-3">
           <a
-            href={siteConfig.whatsappLink}
+            href={siteConfig.whatsappSchedulingLink}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold w-full py-4 text-base flex items-center justify-center gap-2"
