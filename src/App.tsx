@@ -8,6 +8,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { SparkleEffect, TwinklingStars, GoldenGlow } from "@/components/SparkleEffect";
 import { initMetaPixel } from "@/lib/conversion";
 import Index from "./pages/Index";
+import Agendamentos from "./pages/Agendamentos";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/agendamentos" element={<Agendamentos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

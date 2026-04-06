@@ -6,6 +6,7 @@
 export const siteConfig = {
   // Links principais
   whatsappLink: "https://wa.me/819012385981", // Número do Japão
+  lineLink: "https://line.me/ti/p/rv8Kqbfx5n",
   checkoutLink: "#oferta", // Link do checkout/pagamento
   instagramLink: "https://www.instagram.com/fabricadeestiloo/",
   contactPhone: "090 1238 5981",
